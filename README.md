@@ -1,7 +1,7 @@
 # SleepTime App
 
 A simple web application
-similar to sleepyti.me but
+similar to [sleepyti.me](https://www.sleepyti.me/) but
 limited to suggesting "wake up" 
 times based on calculating sleep cycles.
 
