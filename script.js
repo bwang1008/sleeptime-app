@@ -45,7 +45,7 @@ function zzzOnClick() {
 		
 		let span = document.createElement("span");
 		span.id = "cycle-" + (i+1);
-		span.innerText = new Date(cycle).toLocaleTimeString([], { horu: '2-digit', minute: '2-digit' });
+		span.innerText = new Date(cycle).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 		hours.appendChild(span);
 
 
