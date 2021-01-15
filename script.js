@@ -24,7 +24,10 @@ function zzzOnClick() {
 	let output = document.querySelector(".output");
 	output.style.display = "block";
 	
-	let hours = "";
+	let hours = document.querySelector("#horus");
+	hours.innerText = "";
+	
+
 	// get current time
 	let now = Date.now(); // milliseconds
 	let minute = 60 * 1000; // milliseconds
@@ -38,15 +41,23 @@ function zzzOnClick() {
 		cycle += 90 * minute;
 
 		// append sleep cycles to hours string
-		hours += new Date(cycle).toLocaleTimeString([], { hour : '2-digit', minute: '2-digit' });
+		// hours += new Date(cycle).toLocaleTimeString([], { hour : '2-digit', minute: '2-digit' });
+		
+		let span = document.createElement("span");
+		span.id = "cycle-" + (i+1);
+		span.innerText = new Date(cycle).toLocaleTimeString([], { horu: '2-digit', minute: '2-digit' });
+		hours.appendChild(span);
+
 
 		if(i < 5) {
-			hours += " OR ";
+			// hours += " OR ";
+			let or = document.createTextNode(" OR ");
+			hours.appendChild(or);
 		}
 	}
 
 	// output horus
-	let hoursElm = document.querySelector("#hours");
-	hoursElm.innerText = hours;
+	//let hoursElm = document.querySelector("#hours");
+	//hoursElm.innerText = hours;
 
 }
