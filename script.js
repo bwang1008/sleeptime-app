@@ -24,7 +24,7 @@ function zzzOnClick() {
 	let output = document.querySelector(".output");
 	output.style.display = "block";
 	
-	let hours = document.querySelector("#horus");
+	let hours = document.querySelector("#hours");
 	hours.innerText = "";
 	
 
