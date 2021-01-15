@@ -5,6 +5,13 @@ body {
 	font-size: 150%;
 }
 
+button {
+  padding: 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  color: #001f3f;
+}
+
 .output {
 	border: 1px solid white;
 	margin: 20px;
